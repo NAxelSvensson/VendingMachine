@@ -12,16 +12,16 @@ internal class Food : Product, IProduct
     {
 
     }
-    public void Description()
+    public override void Description()
     {
-
+        Console.WriteLine($"{this.Descriptions}. {this.Name} är något du äter!");
     }
-    public void Buy()
+    public override void Buy()
     {
-
+        Console.WriteLine($"Du har köpt {this.Name}");
     }
-    public void Use()
+    public override void Use()
     {
-
+        Console.WriteLine($"Du har ättit {this.Name}");
     }
 }
