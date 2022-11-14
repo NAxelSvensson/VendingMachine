@@ -20,7 +20,6 @@ internal abstract class Product : IProduct
         this.Cost = cost;
         this.Descriptions = descriptions;
     }
-
     public virtual void Description()
     {
         Console.WriteLine($"{this.Descriptions}. Detta är bas beskrivning");
