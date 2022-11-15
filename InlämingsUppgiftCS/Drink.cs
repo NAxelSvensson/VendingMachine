@@ -12,16 +12,16 @@ internal class Drink : Product, iProduct
     {
 
     }
-    public void Description()
+    public override void Description()
     {
-
+        Console.WriteLine($"{this.Descriptions}. {this.Name} är något du dricker!");
     }
-    public void Buy()
+    public override void Buy()
     {
-
+        Console.WriteLine($"Du har köpt {this.Name}");
     }
-    public void Use()
+    public override void Use()
     {
-
+        Console.WriteLine($"Du har druckit {this.Name}");
     }
 }
