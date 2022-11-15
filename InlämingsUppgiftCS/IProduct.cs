@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InlämingsUppgiftCS;
 
-internal interface IProduct
+internal interface iProduct
 {
     //Metoder i interface
     void Description();
