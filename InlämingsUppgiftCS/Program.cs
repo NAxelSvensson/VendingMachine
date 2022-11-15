@@ -91,7 +91,7 @@ internal class Program
     static int YourChoice(string message)
     {
         Console.Write(message);
-        var choice = int.Parse(Console.ReadLine() ?? string.Empty);
+        var choice = int.Parse(Console.ReadLine());
         return choice - 1;
     }
     //Metod för att köpa eller inte

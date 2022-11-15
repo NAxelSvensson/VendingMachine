@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InlämingsUppgiftCS;
 
-internal class Food : Product, iProduct
+internal class Food : Product, IProduct
 {
     public Food(string name, int cost, string descriptions) : base(name, cost, descriptions)
     {
