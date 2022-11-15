@@ -14,7 +14,7 @@ internal class Drink : Product, IProduct
     }
     public override void Description()
     {
-        Console.WriteLine($"{this.Descriptions}. {this.Name} är något du dricker!");
+        Console.WriteLine($"{this.Name} kostar {this.Cost}kr. {this.Descriptions}. {this.Name} är något du dricker!");
     }
     public override void Buy()
     {
