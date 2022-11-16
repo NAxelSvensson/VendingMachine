@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutomatMaskin;
 
-internal class Drink : Product
+internal class Drink : Product, IProduct
 {
     public Drink(string name, int cost, string descriptions) : base(name, cost, descriptions)
     {
