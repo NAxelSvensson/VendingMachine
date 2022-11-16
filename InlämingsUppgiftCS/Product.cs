@@ -20,16 +20,17 @@ internal abstract class Product : IProduct
         this.cost = cost;
         this.descriptions = descriptions;
     }
+    //Metod för beskrivningen och kostnad
     public virtual void Description()
     {
-        Console.WriteLine($"{this.descriptions}. Detta är bas beskrivning");
+        Console.WriteLine($"{this.name} kostar {this.cost}kr. {this.descriptions}. Detta är bas beskrivning");
     }
-
+    //Metod för att visa att man har köpt produkten
     public virtual void Buy()
     {
         Console.WriteLine("Detta är bas köp");
     }
-
+    //Metod för att visa att man har använt produkten
     public virtual void Use()
     {
         Console.WriteLine("Detta är bas användning");
