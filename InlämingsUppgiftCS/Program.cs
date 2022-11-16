@@ -2,7 +2,7 @@
 using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 
-namespace AutomatMaskin;
+namespace InlämningsUppgift;
 internal class Program
 {
     static void Main(string[] args)
