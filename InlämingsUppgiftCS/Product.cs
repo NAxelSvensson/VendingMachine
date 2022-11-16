@@ -8,21 +8,21 @@ namespace AutomatMaskin;
 
 internal abstract class Product : IProduct
 {
-    //Property
-    public string Name { get; set; }
-    public int Cost { get; set; }
-    public string Descriptions { get; set; }
+    //Attribut
+    public string name;
+    public int cost;
+    public string descriptions;
 
     //Konstruktor
     public Product(string name, int cost, string descriptions)
     {
-        this.Name = name;
-        this.Cost = cost;
-        this.Descriptions = descriptions;
+        this.name = name;
+        this.cost = cost;
+        this.descriptions = descriptions;
     }
     public virtual void Description()
     {
-        Console.WriteLine($"{this.Descriptions}. Detta är bas beskrivning");
+        Console.WriteLine($"{this.descriptions}. Detta är bas beskrivning");
     }
 
     public virtual void Buy()

@@ -92,7 +92,7 @@ internal class Program
         Console.WriteLine("=================");
         for (int i = 0; i<productList.Length; i++)
         {
-            Console.WriteLine($"{i + 1}. {productList[i].Name}");
+            Console.WriteLine($"{i + 1}. {productList[i].name}");
         }
         Console.WriteLine($"{productList.Length + 1}. Avsluta");
     }
