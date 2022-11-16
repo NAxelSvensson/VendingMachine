@@ -7,7 +7,8 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        const string FelMessage = "Ditt val var ogiltligt";
+        //Variabel för felmedelande
+        const string felMessage = "Ditt val var ogiltligt";
         //Hämta listan från en metod
         Product[] productList = InitProductList();
 
@@ -20,7 +21,7 @@ internal class Program
             var choice = ReadChoice("Ditt val: ");
             if(choice < 0 || choice > productList.Length)
             {
-                ShowError(FelMessage);
+                ShowError(felMessage);
                 continue;
             }
 
@@ -29,7 +30,6 @@ internal class Program
             {
                 break;
             }
-            //Console.Clear();
             //Variabel för vald produkt
             var choosenProduct = productList[choice];
             while (true)
@@ -56,7 +56,7 @@ internal class Program
                 //Om man råkade skriva ett nummer som inte är 1 eller 2
                 else
                 {
-                    ShowError(FelMessage);
+                    ShowError(felMessage);
                     continue;
                 }
             }
@@ -116,6 +116,7 @@ internal class Program
 
         return ReadChoice("Ditt val: ", 2);
     }
+    //Metod för att visa felmedelande
     static void ShowError(string message)
     {
         Console.Write($"{message}. Tryck på vilken tangent för att fortsätta...");
