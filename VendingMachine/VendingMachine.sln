@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomatMaskin", "InlämingsUppgiftCS\AutomatMaskin.csproj", "{CFAE8507-6C11-4E32-B2D3-7046D199B612}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachine", "VendingMachine\VendingMachine.csproj", "{C33F3EA6-6FF4-4862-8DCB-C681A6259352}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CFAE8507-6C11-4E32-B2D3-7046D199B612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CFAE8507-6C11-4E32-B2D3-7046D199B612}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CFAE8507-6C11-4E32-B2D3-7046D199B612}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CFAE8507-6C11-4E32-B2D3-7046D199B612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C33F3EA6-6FF4-4862-8DCB-C681A6259352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C33F3EA6-6FF4-4862-8DCB-C681A6259352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C33F3EA6-6FF4-4862-8DCB-C681A6259352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C33F3EA6-6FF4-4862-8DCB-C681A6259352}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BCA2691E-AA5E-4407-B6EB-0AB01418D2BB}
+		SolutionGuid = {2882E6DC-6707-486A-85CF-77E94483BE9D}
 	EndGlobalSection
 EndGlobal

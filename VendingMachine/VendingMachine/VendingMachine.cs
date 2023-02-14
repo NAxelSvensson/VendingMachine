@@ -1,11 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Reflection.Metadata;
-using System.Runtime.CompilerServices;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace InlämningsUppgift;
-internal class Program
+namespace VendingMachine;
+
+class VendingMachine
 {
-    static void Main(string[] args)
+    public void Run()
     {
         //Variabel för felmedelande
         const string felMessage = "Ditt val var ogiltligt";
@@ -19,7 +22,7 @@ internal class Program
             ShowMenu(productList);
             //Väljer produkt
             var choice = ReadChoice("Ditt val: ");
-            if(choice < 0 || choice > productList.Length)
+            if (choice < 0 || choice > productList.Length)
             {
                 ShowError(felMessage);
                 continue;
@@ -37,7 +40,7 @@ internal class Program
                 Console.Clear();
                 choosenProduct.Description();
                 var buyOrNot = BuyOrNot();
-                
+
                 //Om man väljer att köpa produkten
                 if (buyOrNot == 0)
                 {
@@ -67,21 +70,21 @@ internal class Program
     {
         return new Product[]
         {
-            //Objekt för varor
-            new Food("Banan", 10, "Den är söt och gul"),
-            new Food("Äpple", 8, "Den är röd och krispig"),
-            new Food("Choklad", 25, "Den är väldigt söt"),
-            new Food("Korv", 15, "Den kommer med bröd och ketchup"),
+        //Objekt för varor
+        new Food("Banan", 10, "Den är söt och gul"),
+        new Food("Äpple", 8, "Den är röd och krispig"),
+        new Food("Choklad", 25, "Den är väldigt söt"),
+        new Food("Korv", 15, "Den kommer med bröd och ketchup"),
 
-            new Drink("Fanta", 20, "Den smakar apelsin"),
-            new Drink("Vatten", 15, "Det är vanligt vatten"),
-            new Drink("Kaffe", 18, "Den ger dig energi"),
-            new Drink("Pucko", 16, "Det är en chocklad dricka"),
+        new Drink("Fanta", 20, "Den smakar apelsin"),
+        new Drink("Vatten", 15, "Det är vanligt vatten"),
+        new Drink("Kaffe", 18, "Den ger dig energi"),
+        new Drink("Pucko", 16, "Det är en chocklad dricka"),
 
-            new Clothes("Tröja", 150, "Det är en fluffig tröja"),
-            new Clothes("Jeans", 250, "Det är ett par blå jeans"),
-            new Clothes("Skjorta", 300, "Det är en blommig skjorta"),
-            new Clothes("Tofflor", 100, "Det är ett par mysiga tofflor")
+        new Clothes("Tröja", 150, "Det är en fluffig tröja"),
+        new Clothes("Jeans", 250, "Det är ett par blå jeans"),
+        new Clothes("Skjorta", 300, "Det är en blommig skjorta"),
+        new Clothes("Tofflor", 100, "Det är ett par mysiga tofflor")
         };
     }
     //Metod för att visa huvud meny
@@ -90,7 +93,7 @@ internal class Program
         Console.Clear();
         Console.WriteLine("Meny");
         Console.WriteLine("=================");
-        for (int i = 0; i<productList.Length; i++)
+        for (int i = 0; i < productList.Length; i++)
         {
             Console.WriteLine($"{i + 1}. {productList[i].name}");
         }
