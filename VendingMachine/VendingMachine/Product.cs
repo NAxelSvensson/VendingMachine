@@ -23,7 +23,7 @@ internal abstract class Product : IProduct
     //Metod för beskrivningen och kostnad
     public virtual void Description()
     {
-        Console.WriteLine($"{this.name} kostar {this.cost}kr. {this.descriptions}. Detta är bas beskrivning");
+        Console.WriteLine($"{name} kostar {cost}kr. {descriptions}. Detta är bas beskrivning");
     }
     //Metod för att visa att man har köpt produkten
     public virtual void Buy()
